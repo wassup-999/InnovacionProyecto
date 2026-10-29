@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
+using Unity.Cinemachine;
 
 [RequireComponent(typeof(CharacterController))]
 public class PlayerController : MonoBehaviour
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundedStickForce = -2f;
 
     #region References
+    public CinemachineCamera PlayerCamera;
     private CharacterController characterController;
     private InputSystem_Actions inputs;
     #endregion
@@ -31,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        characterController = GetComponent<CharacterController>();
+        characterController = GetComponent<CharacterController>();      
         inputs = new();
     }
     private void OnEnable()
@@ -89,5 +91,11 @@ public class PlayerController : MonoBehaviour
     {
         canMove = value;
         if (!value) horizontalVelocity = Vector3.zero;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(PlayerCamera.transform.position, PlayerCamera.transform.position + PlayerCamera.transform.forward * 3f);
     }
 }
