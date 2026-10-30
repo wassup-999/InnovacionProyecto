@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public PlayerController PlayerController;
     public CameraController CameraController;
     public PlayerInteractor PlayerInteractor;
+    [Header("Paint References")]
+    public Paint Paint;
 
     
     private void Awake()

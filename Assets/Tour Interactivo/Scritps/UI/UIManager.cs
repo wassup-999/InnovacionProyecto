@@ -4,7 +4,11 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager Instance;
 
+    [Header("References")]
     public PaintingUI PaintingUI;
+    public InteractionPrompt InteractionPrompt;
+
+   
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -14,6 +18,8 @@ public class UIManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        
     }
     void Start()
     {
@@ -22,5 +28,15 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         
+    }
+    public void ShowInteractionPrompt(Transform target , string message)
+    {
+        Debug.Log("application recieved from UIManager for show message");//<-
+        
+        InteractionPrompt.Show(target , message);
+    }
+    public void HideInteractionPrompt()
+    {
+        InteractionPrompt.Hide();
     }
 }
