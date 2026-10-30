@@ -42,11 +42,11 @@ public class PlayerInteractor : MonoBehaviour
 
         if (Physics.Raycast(ray , out RaycastHit hit , interactionDistance))
         {          
-            IInteractable interactable = hit.collider.GetComponentInParent<IInteractable>();
-            if(hit.collider != null)
+            Paint paint = hit.collider.GetComponentInParent<Paint>();
+            if(paint != null)
             {
                 Debug.Log("Press E to interact");
-                interactable.Interact();
+                paint.Interact();             
             }
         }
     }

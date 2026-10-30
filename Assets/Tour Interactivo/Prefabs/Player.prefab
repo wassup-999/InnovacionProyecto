@@ -129,12 +129,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95df5a87afea6564db85cb980faa8573, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  walkSpeed: 2.5
+  walkSpeed: 3
   backwardSpeedMultiplier: 0.75
   acceleration: 12
   deceleration: 14
   gravity: -20
   groundedStickForce: -2
+  PlayerCamera: {fileID: 875175108010727350}
 --- !u!143 &901838640897819071
 CharacterController:
   m_ObjectHideFlags: 0
@@ -294,7 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3e8910cd4a64ef48be4aebe152e183c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
-  mouseSensivity: 1
+  mouseSensivity: 0.6
   gamepadSensitivity: 120
   xRotation: 0
   PlayerReference: {fileID: 2672835705025857580}

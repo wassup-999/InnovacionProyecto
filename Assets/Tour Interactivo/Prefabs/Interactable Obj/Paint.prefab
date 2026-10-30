@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6292720339689451219}
   - component: {fileID: 8810895961828024413}
   - component: {fileID: 275343432010393595}
+  - component: {fileID: -5099745539706586579}
   m_Layer: 0
   m_Name: Paint
   m_TagString: Untagged
@@ -112,3 +113,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-5099745539706586579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5376338117437844092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f41fc3abd3fbb148abc79f02613b035, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Paint
+  paintDescription: a
+  paintData: {fileID: 11400000, guid: 8a8588d335c134c4fac5e0d61afc5e79, type: 2}

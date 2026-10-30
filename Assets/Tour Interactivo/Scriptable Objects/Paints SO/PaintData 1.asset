@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd21e31664f7f0b46ac53b643bbb1ab3, type: 3}
+  m_Name: PaintData 1
+  m_EditorClassIdentifier: Assembly-CSharp::PaintData
+  paintTitle: El viejo San Carlos
+  author: "Te\xF3filo Castillo Guas (1857-1922)"
+  description: "La obra representa el interior de la emblem\xE1tica Casona de la
+    Universidad Nacional Mayor de San Marcos (conocida hist\xF3ricamente como el
+    antiguo local del Real Colegio de San Carlos). Al titularla \"El viejo San Carlos\",
+    Castillo no solo hace una referencia f\xEDsica a la vetusta infraestructura,
+    sino que evoca con nostalgia un santuario del saber que durante siglos fue el
+    epicentro de la vida intelectual, teol\xF3gica y jur\xEDdica del Virreinato del
+    Per\xFA y de la primera etapa de la Rep\xFAblica. La pintura funciona como un
+    monumento visual a la memoria acad\xE9mica del pa\xEDs."
+  authorImage: {fileID: -6004593626451663899, guid: 11ccd8d1ea3d5da40af3d705e74e32ef, type: 3}
