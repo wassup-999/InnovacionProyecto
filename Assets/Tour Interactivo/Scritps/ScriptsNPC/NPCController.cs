@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Xml;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,7 +8,8 @@ public class NPCController : MonoBehaviour
     [Header("Detection & Observe")]
     public float DetectionRange = 10f;
     public float ObserveDuration = 4f;
-    public string TargetColliderName = "Observar";
+    // Ahora definimos el Tag que buscará el NPC
+    public string TargetTag = "Observar";
 
     [Header("Roam")]
     public float RoamRadius = 15f;
@@ -22,7 +22,7 @@ public class NPCController : MonoBehaviour
     public RoamState RoamState;
     public ObserveState ObserveState;
 
-    // Referencia al último objeto observado para no repetirlo de inmediato
+    // Referencia al último objeto observado
     [HideInInspector] public Transform LastObservedTarget;
 
     private void Awake()
@@ -46,7 +46,7 @@ public class NPCController : MonoBehaviour
     }
 
     /// <summary>
-    /// Busca si hay un collider cercano con el nombre 'Observar' que no sea el último que vio.
+    /// Busca si hay un collider cercano con el TAG especificado que no sea el último que vio.
     /// </summary>
     public Transform DetectObserveTarget()
     {
@@ -54,9 +54,10 @@ public class NPCController : MonoBehaviour
 
         foreach (var col in hitColliders)
         {
-            if (col.gameObject.name == TargetColliderName)
+            // Verificamos por TAG usando CompareTag (es más eficiente)
+            if (col.CompareTag(TargetTag))
             {
-                // Si es un objeto nuevo (diferente al último observado), lo detectamos
+                // Solo si es un objeto distinto al último que observó
                 if (col.transform != LastObservedTarget)
                 {
                     return col.transform;
