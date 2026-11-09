@@ -32,7 +32,8 @@ Transform:
   m_LocalPosition: {x: -0.006, y: 2.13, z: 2.97105}
   m_LocalScale: {x: 1.7658901, y: 2.1102138, z: 0.14364342}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7821110661970387973}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6292720339689451219
@@ -125,5 +126,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f41fc3abd3fbb148abc79f02613b035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Paint
-  paintDescription: a
   paintData: {fileID: 11400000, guid: 8a8588d335c134c4fac5e0d61afc5e79, type: 2}
+  promptAnchor: {fileID: 7821110661970387973}
+--- !u!1 &7324351334979933315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7821110661970387973}
+  m_Layer: 0
+  m_Name: PromptAnchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7821110661970387973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7324351334979933315}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.037, y: -0.041, z: 1.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6950051703158654779}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
