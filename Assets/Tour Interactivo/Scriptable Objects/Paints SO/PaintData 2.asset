@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd21e31664f7f0b46ac53b643bbb1ab3, type: 3}
   m_Name: PaintData 2
   m_EditorClassIdentifier: Assembly-CSharp::PaintData
-  paintTitle: 
-  author: 
-  description: 
-  authorImage: {fileID: 0}
-  play: {fileID: 0}
+  paintTitle: La noche estrellada
+  author: "Vincent van Gogh (1853\u20131890)."
+  description: "Expresa la turbulencia emocional y la b\xFAsqueda de consuelo espiritual
+    de Van Gogh, proyectando su estado interior sobre un firmamento nocturno vibrante
+    que conecta lo terrenal con lo eterno. "
+  authorImage: {fileID: -1778447881016235775, guid: 9f5d249361ff2ba4abc75eff648aea3b, type: 3}

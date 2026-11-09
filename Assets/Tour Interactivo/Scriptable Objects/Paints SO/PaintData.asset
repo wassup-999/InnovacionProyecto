@@ -12,13 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd21e31664f7f0b46ac53b643bbb1ab3, type: 3}
   m_Name: PaintData
   m_EditorClassIdentifier: Assembly-CSharp::PaintData
-  paintTitle: "Indio amaz\xF3nico con un arco"
-  author: Pancho Fierro (1807-1879)
-  description: "En la pieza se observa a un personaje de indumentaria sencilla \u2014caracterizada
-    frecuentemente en estas representaciones por elementos como una corona de plumas
-    y poca ropa adaptada al clima tropical\u2014 empu\xF1ando un arco. Para el movimiento
-    costumbrista, este tipo de representaciones no buscaba profundizar en la psicolog\xEDa
-    individual del retratado, sino estandarizar y visibilizar los arquetipos humanos
-    que poblaban las distintas regiones del pa\xEDs, integr\xE1ndolos simb\xF3licamente
-    a la naciente naci\xF3n republicana."
-  authorImage: {fileID: -4980839137996402952, guid: e8311d5fe2ff0d248a263a53ab681531, type: 3}
+  paintTitle: 'La Mona Lisa '
+  author: "Leonardo da Vinci (1452\u20131519)."
+  description: "La Mona Lisa simboliza la uni\xF3n entre el ser humano y la naturaleza
+    (el cuerpo como reflejo de la Tierra), priorizando la psicolog\xEDa y serenidad
+    interior de la persona por encima del estatus social o la riqueza. "
+  authorImage: {fileID: -5680962014526422608, guid: 3fccffc98231a154098c24df7d321ba1, type: 3}

@@ -357,6 +357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
   PaintingUI: {fileID: 1077155013}
   InteractionPrompt: {fileID: 7231312321830809919, guid: abc8f0fb6b368174fab5b2c54061f9ac, type: 3}
+  FPSCounterUI: {fileID: 0}
 --- !u!4 &103923619
 Transform:
   m_ObjectHideFlags: 0

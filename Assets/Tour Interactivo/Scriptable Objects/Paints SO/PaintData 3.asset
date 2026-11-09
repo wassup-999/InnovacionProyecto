@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd21e31664f7f0b46ac53b643bbb1ab3, type: 3}
   m_Name: PaintData 3
   m_EditorClassIdentifier: Assembly-CSharp::PaintData
-  paintTitle: 
-  author: 
-  description: 
-  authorImage: {fileID: 0}
-  play: {fileID: 0}
+  paintTitle: El grito
+  author: "Edvard Munch (1863\u20131944)."
+  description: "Representa la angustia existencial y la alienaci\xF3n del ser humano,
+    donde la figura se tapa los o\xEDdos abrumada por la ansiedad frente a un \"grito
+    infinito\" que retumba en la naturaleza. "
+  authorImage: {fileID: 2413559550585077628, guid: b5a517947567a1f439e68f2763cdaf2b, type: 3}

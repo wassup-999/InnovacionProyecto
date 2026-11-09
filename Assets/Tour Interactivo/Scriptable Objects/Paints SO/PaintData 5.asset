@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd21e31664f7f0b46ac53b643bbb1ab3, type: 3}
   m_Name: PaintData 5
   m_EditorClassIdentifier: Assembly-CSharp::PaintData
-  paintTitle: 
-  author: 
-  description: 
-  authorImage: {fileID: 0}
-  play: {fileID: 0}
+  paintTitle: 'El beso (Der Kuss) '
+  author: "Gustav Klimt (1862\u20131918). "
+  description: "Simboliza la fusi\xF3n m\xEDstica y la trascendencia del amor verdadero,
+    elevando la pasi\xF3n f\xEDsica y la entrega emocional a un estado intemporal
+    y sagrado fuera del mundo terrenal. "
+  authorImage: {fileID: 1095219041167604436, guid: 69ab4abf4171dc04aad23e571b01e516, type: 3}

@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd21e31664f7f0b46ac53b643bbb1ab3, type: 3}
   m_Name: PaintData 4
   m_EditorClassIdentifier: Assembly-CSharp::PaintData
-  paintTitle: 
-  author: 
-  description: 
-  authorImage: {fileID: 0}
-  play: {fileID: 0}
+  paintTitle: Guernica
+  author: " Pablo Picasso (1881\u20131973)."
+  description: "Representa el dolor, la desesperaci\xF3n y la devastaci\xF3n de la
+    poblaci\xF3n civil, constituyendo un grito universal contra la barbarie y los
+    horrores de la guerra."
+  authorImage: {fileID: -8251474495988443993, guid: 55991f5c6a416b247aaad848a354f2e3, type: 3}

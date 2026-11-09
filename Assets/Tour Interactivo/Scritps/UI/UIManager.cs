@@ -7,8 +7,8 @@ public class UIManager : MonoBehaviour
     [Header("References")]
     public PaintingUI PaintingUI;
     public InteractionPrompt InteractionPrompt;
+    public FPSCounterUI FPSCounterUI;
 
-   
     private void Awake()
     {
         if (Instance != null && Instance != this)
