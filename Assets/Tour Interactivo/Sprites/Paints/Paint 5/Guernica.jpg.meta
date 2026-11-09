@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1662a0dadf5f94c4f8003e0e4b49500b
+guid: 53fcbd1c8630eea4aa2e530f6382fed7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1346949930136945518
-    second: El viejo San Carlos_0
+      213: 4520744970694475049
+    second: Guernica_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: El viejo San Carlos_0
+      name: Guernica_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 331
-        height: 513
+        width: 3195
+        height: 1913
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 29c33fbcc2cae4de0800000000000000
-      internalID: -1346949930136945518
+      spriteID: 92db0625999ecbe30800000000000000
+      internalID: 4520744970694475049
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      El viejo San Carlos_0: -1346949930136945518
+      Guernica_0: 4520744970694475049
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

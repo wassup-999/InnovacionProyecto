@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e8311d5fe2ff0d248a263a53ab681531
+guid: 9bd7c600255fd024e88d87f425994b76
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4980839137996402952
-    second: Pancho Fierro_0
+      213: -2869930336358052054
+    second: Johannes Vermeer_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pancho Fierro_0
+      name: Johannes Vermeer_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 750
-        height: 500
+        width: 498
+        height: 735
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8fe8c50913180eab0800000000000000
-      internalID: -4980839137996402952
+      spriteID: a2fc24b8095fb28d0800000000000000
+      internalID: -2869930336358052054
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Pancho Fierro_0: -4980839137996402952
+      Johannes Vermeer_0: -2869930336358052054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

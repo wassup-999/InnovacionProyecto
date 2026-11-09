@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd21e31664f7f0b46ac53b643bbb1ab3, type: 3}
   m_Name: PaintData 6
   m_EditorClassIdentifier: Assembly-CSharp::PaintData
-  paintTitle: 
-  author: 
-  description: 
-  authorImage: {fileID: 0}
-  play: {fileID: 0}
+  paintTitle: La joven de la perla
+  author: "Johannes Vermeer (1632\u20131675). "
+  description: "Captura la belleza de un instante fugaz e \xEDntimo, donde la mirada
+    enigm\xE1tica de la joven y el juego maestro de la luz transforman una sencilla
+    figura en un s\xEDmbolo del misterio del alma humana. \r\n"
+  authorImage: {fileID: -2869930336358052054, guid: 9bd7c600255fd024e88d87f425994b76, type: 3}
