@@ -1,4 +1,3 @@
-
 public class StateMachine
 {
     private IState currentState;
@@ -20,5 +19,4 @@ public class StateMachine
     {
         currentState.Update();
     }
-
 }

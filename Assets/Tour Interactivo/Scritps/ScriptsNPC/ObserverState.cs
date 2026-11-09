@@ -19,11 +19,20 @@ public class ObserveState : IState
         timer = 0f;
         hasArrived = false;
 
-        // Si tenemos un punto objetivo registrado, le pedimos al NavMeshAgent que vaya hacia él
         if (npc.LastObservedTarget != null && npc.Agent != null && npc.Agent.isOnNavMesh)
         {
             npc.Agent.isStopped = false;
-            npc.Agent.SetDestination(npc.LastObservedTarget.position);
+
+            // Obtener el punto más cercano en la superficie del Collider
+            Collider targetCollider = npc.LastObservedTarget.GetComponent<Collider>();
+            Vector3 destinationPoint = npc.LastObservedTarget.position;
+
+            if (targetCollider != null)
+            {
+                destinationPoint = targetCollider.ClosestPoint(npc.transform.position);
+            }
+
+            npc.Agent.SetDestination(destinationPoint);
         }
     }
 
@@ -35,19 +44,18 @@ public class ObserveState : IState
             return;
         }
 
-        // FASE 1: Caminar hasta estar tocando / muy cerca del collider objetivo
+        // FASE 1: Caminar hasta estar cerca del objetivo
         if (!hasArrived)
         {
-            // Comprobamos si ya llegó al destino asignado
             if (!npc.Agent.pathPending && npc.Agent.remainingDistance <= npc.Agent.stoppingDistance)
             {
                 hasArrived = true;
 
-                // Frenar al NPC una vez llega a la marca
+                // Frenar al NPC al llegar
                 npc.Agent.isStopped = true;
                 npc.Agent.velocity = Vector3.zero;
 
-                // Orientarlo para que mire directo al objeto
+                // Orientarlo hacia el objeto
                 Vector3 lookDirection = npc.LastObservedTarget.position - npc.transform.position;
                 lookDirection.y = 0;
                 if (lookDirection != Vector3.zero)
@@ -56,7 +64,7 @@ public class ObserveState : IState
                 }
             }
         }
-        // FASE 2: Contar los 4 segundos en el sitio
+        // FASE 2: Esperar en la posición observando
         else
         {
             timer += Time.deltaTime;
@@ -70,10 +78,14 @@ public class ObserveState : IState
 
     public void Exit()
     {
-        // Reanudar al agente para la patrulla
+        // Reanudar el NavMeshAgent
         if (npc.Agent != null && npc.Agent.isOnNavMesh)
         {
             npc.Agent.isStopped = false;
+            npc.Agent.ResetPath();
         }
+
+        // Limpia la referencia e inicia el cooldown de 5 segundos para este objetivo
+        npc.FinishObserving();
     }
 }
