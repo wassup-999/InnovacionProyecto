@@ -1,0 +1,87 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <Style src="StartMenu.uss" />
+
+    <ui:VisualElement name="screen" class="screen">
+
+        <!-- Fondo del museo + viñeta -->
+        <ui:VisualElement name="backdrop" class="backdrop" picking-mode="Ignore" />
+        <ui:VisualElement name="vignette" class="vignette" picking-mode="Ignore" />
+
+        <!-- Marco principal -->
+        <ui:VisualElement name="frame" class="frame">
+
+            <ui:VisualElement class="top-bar">
+                <ui:VisualElement class="gold-square" />
+                <ui:Label text="MUSEO DE LA INNOVACIÓN" class="museum-label" />
+                <ui:VisualElement class="top-line" />
+                <ui:Label text="SALA I" class="room-label" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="plaque" class="plaque">
+
+                <ui:VisualElement class="inner-frame" picking-mode="Ignore" />
+                <ui:VisualElement class="corner corner-tl" />
+                <ui:VisualElement class="corner corner-tr" />
+                <ui:VisualElement class="corner corner-bl" />
+                <ui:VisualElement class="corner corner-br" />
+
+                <ui:Label text="COLECCIÓN PERMANENTE" class="eyebrow" />
+                <ui:Label text="TOUR" class="title" />
+                <ui:Label text="INTERACTIVO" class="title title-accent" />
+
+                <ui:VisualElement class="ornament">
+                    <ui:VisualElement class="ornament-line" />
+                    <ui:VisualElement class="ornament-diamond" />
+                    <ui:VisualElement class="ornament-line" />
+                </ui:VisualElement>
+
+                <ui:Label text="Recorre la galería, detente frente a cada obra y descubre la historia que guarda. Un recorrido guiado por el arte y sus visitantes." class="subtitle" />
+
+                <ui:VisualElement class="actions">
+                    <ui:Button name="start-button" text="COMENZAR RECORRIDO" class="btn btn-primary" />
+                    <ui:Button name="help-button" text="CÓMO JUGAR" class="btn btn-ghost" />
+                    <ui:Button name="quit-button" text="SALIR DEL MUSEO" class="btn btn-ghost" />
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+            <ui:VisualElement class="footer">
+                <ui:Label text="WASD  ·  RATÓN  ·  E PARA EXAMINAR" class="hint" />
+                <ui:Label text="v0.1  —  InnovaciónProyecto" class="version" />
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <!-- Panel de ayuda -->
+        <ui:VisualElement name="help-overlay" class="overlay hidden">
+            <ui:VisualElement class="overlay-card">
+                <ui:Label text="CÓMO JUGAR" class="overlay-title" />
+                <ui:VisualElement class="ornament ornament-small">
+                    <ui:VisualElement class="ornament-line" />
+                    <ui:VisualElement class="ornament-diamond" />
+                    <ui:VisualElement class="ornament-line" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="help-row">
+                    <ui:Label text="WASD" class="key-badge" />
+                    <ui:Label text="Caminar por la galería" class="help-text" />
+                </ui:VisualElement>
+                <ui:VisualElement class="help-row">
+                    <ui:Label text="RATÓN" class="key-badge" />
+                    <ui:Label text="Mirar alrededor" class="help-text" />
+                </ui:VisualElement>
+                <ui:VisualElement class="help-row">
+                    <ui:Label text="E" class="key-badge" />
+                    <ui:Label text="Examinar la obra señalada" class="help-text" />
+                </ui:VisualElement>
+                <ui:VisualElement class="help-row">
+                    <ui:Label text="ESC" class="key-badge" />
+                    <ui:Label text="Cerrar este panel" class="help-text" />
+                </ui:VisualElement>
+
+                <ui:Button name="help-close-button" text="VOLVER AL MENÚ" class="btn btn-primary btn-overlay" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

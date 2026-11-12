@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Tour Interactivo/Scenes/StartMenu.unity
+    guid: ded09201aa3d15c4b9a21f71007dd590
+  - enabled: 1
+    path: Assets/Tour Interactivo/Scenes/Npc.unity
+    guid: f7dcc8afa0342a4458fb98eab7cb1ea7
+  - enabled: 1
     path: Assets/Tour Interactivo/Scenes/InteractiveTourTrip.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:

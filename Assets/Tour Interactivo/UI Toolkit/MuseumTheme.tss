@@ -1,0 +1,20 @@
+/* ============================================================
+   MuseumTheme.tss — Tema base de runtime para el museo.
+   Se asigna en el PanelSettings del menú.
+   ============================================================ */
+
+:root {
+    -unity-font-definition: url("Fonts/CrimsonText-Regular.ttf");
+    -unity-font-size: 16px;
+    color: rgb(233, 220, 195);
+}
+
+Button {
+    -unity-font-definition: url("Fonts/Cinzel.ttf");
+    -unity-font-size: 15px;
+    color: rgb(233, 220, 195);
+}
+
+Label {
+    -unity-font-definition: url("Fonts/CrimsonText-Regular.ttf");
+}

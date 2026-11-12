@@ -1,0 +1,332 @@
+/* ============================================================
+   StartMenu.uss — Menú de inicio "Museo de la Innovación"
+   Paleta: ébano, nogal, pergamino y dorado envejecido.
+   ============================================================ */
+
+.screen {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(14, 11, 9);
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.45s;
+    transition-timing-function: ease-in-out;
+}
+
+.screen.fade-out {
+    opacity: 0;
+}
+
+/* ---------- Fondo ---------- */
+
+.backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("Textures/MuseumBackdrop.png");
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.vignette {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(6, 4, 3, 0.22);
+}
+
+/* ---------- Marco ---------- */
+
+.frame {
+    flex-grow: 1;
+    width: 100%;
+    padding: 42px 64px 30px 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar {
+    width: 100%;
+    max-width: 1180px;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(200, 162, 74, 0.45);
+}
+
+.gold-square {
+    width: 8px;
+    height: 8px;
+    background-color: rgb(200, 162, 74);
+    margin-right: 14px;
+}
+
+.museum-label {
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: rgb(200, 162, 74);
+    -unity-font-style: bold;
+}
+
+.top-line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(200, 162, 74, 0.22);
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.room-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: rgba(233, 220, 195, 0.55);
+}
+
+/* ---------- Placa central ---------- */
+
+.plaque {
+    width: 100%;
+    max-width: 760px;
+    padding: 46px 68px 44px 68px;
+    background-color: rgba(27, 22, 18, 0.88);
+    border-width: 1px;
+    border-color: rgba(200, 162, 74, 0.6);
+    border-radius: 2px;
+    align-items: center;
+}
+
+.inner-frame {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    right: 9px;
+    bottom: 9px;
+    border-width: 1px;
+    border-color: rgba(200, 162, 74, 0.16);
+}
+
+.corner {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-color: rgb(200, 162, 74);
+    border-width: 1px;
+}
+
+.corner-tl { left: 6px;  top: 6px;    border-right-width: 0; border-bottom-width: 0; }
+.corner-tr { right: 6px; top: 6px;    border-left-width: 0;  border-bottom-width: 0; }
+.corner-bl { left: 6px;  bottom: 6px; border-right-width: 0; border-top-width: 0; }
+.corner-br { right: 6px; bottom: 6px; border-left-width: 0;  border-top-width: 0; }
+
+.eyebrow {
+    font-size: 12px;
+    letter-spacing: 6px;
+    color: rgb(200, 162, 74);
+    margin-bottom: 18px;
+}
+
+.title {
+    -unity-font-definition: url("Fonts/Cinzel.ttf");
+    font-size: 58px;
+    letter-spacing: 10px;
+    color: rgb(246, 239, 223);
+    -unity-text-align: middle-center;
+    margin-bottom: -6px;
+}
+
+.title-accent {
+    color: rgb(227, 199, 122);
+}
+
+.ornament {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 20px;
+}
+
+.ornament-small {
+    margin-top: 10px;
+    margin-bottom: 26px;
+}
+
+.ornament-line {
+    width: 84px;
+    height: 1px;
+    background-color: rgba(200, 162, 74, 0.55);
+}
+
+.ornament-diamond {
+    width: 7px;
+    height: 7px;
+    background-color: rgb(200, 162, 74);
+    margin-left: 12px;
+    margin-right: 12px;
+    rotate: 45deg;
+}
+
+.subtitle {
+    max-width: 540px;
+    font-size: 17px;
+    color: rgba(233, 220, 195, 0.88);
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+/* ---------- Botones ---------- */
+
+.actions {
+    margin-top: 34px;
+    align-items: center;
+}
+
+.btn {
+    width: 320px;
+    height: 48px;
+    margin-bottom: 10px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 2px;
+    letter-spacing: 3px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    transition-property: background-color, border-color, color, scale;
+    transition-duration: 0.12s;
+}
+
+.btn:focus {
+    border-width: 2px;
+    border-color: rgb(246, 239, 223);
+}
+
+.btn-primary {
+    background-color: rgb(200, 162, 74);
+    border-width: 1px;
+    border-color: rgb(227, 199, 122);
+    color: rgb(26, 20, 15);
+}
+
+.btn-primary:hover {
+    background-color: rgb(219, 182, 96);
+    border-color: rgb(246, 239, 223);
+}
+
+.btn-primary:active {
+    background-color: rgb(170, 134, 56);
+    scale: 0.99;
+}
+
+.btn-ghost {
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 1px;
+    border-color: rgba(200, 162, 74, 0.45);
+    color: rgba(233, 220, 195, 0.85);
+}
+
+.btn-ghost:hover {
+    background-color: rgba(200, 162, 74, 0.12);
+    border-color: rgba(227, 199, 122, 0.85);
+    color: rgb(246, 239, 223);
+}
+
+.btn-ghost:active {
+    background-color: rgba(200, 162, 74, 0.2);
+}
+
+.btn-overlay {
+    width: 240px;
+    margin-top: 26px;
+    margin-bottom: 0;
+}
+
+/* ---------- Pie ---------- */
+
+.footer {
+    width: 100%;
+    max-width: 1180px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    border-top-width: 1px;
+    border-top-color: rgba(200, 162, 74, 0.28);
+}
+
+.hint {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: rgba(233, 220, 195, 0.66);
+}
+
+.version {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: rgba(233, 220, 195, 0.46);
+}
+
+/* ---------- Overlay de ayuda ---------- */
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(6, 4, 3, 0.82);
+}
+
+.hidden {
+    display: none;
+}
+
+.overlay-card {
+    width: 520px;
+    padding: 40px 48px 36px 48px;
+    background-color: rgb(22, 18, 15);
+    border-width: 1px;
+    border-color: rgba(200, 162, 74, 0.6);
+    border-radius: 2px;
+    align-items: center;
+}
+
+.overlay-title {
+    -unity-font-definition: url("Fonts/Cinzel.ttf");
+    font-size: 28px;
+    letter-spacing: 6px;
+    color: rgb(246, 239, 223);
+    -unity-text-align: middle-center;
+}
+
+.help-row {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.key-badge {
+    width: 76px;
+    height: 32px;
+    margin-right: 18px;
+    border-width: 1px;
+    border-color: rgba(200, 162, 74, 0.6);
+    border-radius: 2px;
+    background-color: rgba(200, 162, 74, 0.08);
+    color: rgb(227, 199, 122);
+    font-size: 12px;
+    letter-spacing: 1px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.help-text {
+    font-size: 16px;
+    color: rgba(233, 220, 195, 0.82);
+}
