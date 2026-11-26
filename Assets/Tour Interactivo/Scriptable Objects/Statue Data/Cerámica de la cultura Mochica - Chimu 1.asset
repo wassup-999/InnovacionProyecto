@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52f7ade169d0fe46b71ad4beb77ccaa, type: 3}
+  m_Name: "Cer\xE1mica de la cultura Mochica - Chimu 1"
+  m_EditorClassIdentifier: Assembly-CSharp::StatueData
+  statueName: "Cer\xE1mica de la cultura Mochica - Chimu"
+  cultureAndOrigin: "Culturas Moche y Chim\xFA \xB7 norte del Per\xFA"
+  period: Periodo precolombino
+  description: "Pieza cer\xE1mica que evoca la tradici\xF3n alfarera de la costa
+    norte peruana, reconocida por sus formas, acabados y motivos culturales."
+  image: {fileID: 2800000, guid: f6502c79e70b1ab4bb653684f2c5e70a, type: 3}

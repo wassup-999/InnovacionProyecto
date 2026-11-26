@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,6 +6,8 @@ public class PlayerInteractor : MonoBehaviour
 {
     public float interactionDistance = 3f;
     private InputSystem_Actions inputs;
+    private IInteractable currentInteractable;
+    private Paint currentPaint;
 
     
     private void Awake()
@@ -14,6 +16,7 @@ public class PlayerInteractor : MonoBehaviour
     }
     private void OnEnable()
     {
+        if (inputs == null) inputs = new InputSystem_Actions();
         inputs.Enable();
         inputs.Player.Interact.performed += TryInteract;     
     }
@@ -22,8 +25,14 @@ public class PlayerInteractor : MonoBehaviour
 
     private void OnDisable()
     {
-        inputs.Player.Interact.performed -= TryInteract;
-        inputs.Disable();
+        if (inputs != null)
+        {
+            inputs.Player.Interact.performed -= TryInteract;
+            inputs.Disable();
+        }
+        currentInteractable = null;
+        currentPaint = null;
+        MuseumRuntimeUI.SetFocus(null);
     }
     void Start()
     {
@@ -39,43 +48,29 @@ public class PlayerInteractor : MonoBehaviour
     private void DetecInteractable()
     {
         if (GameManager.Instance == null || GameManager.Instance.PlayerController == null) return;
-        Ray ray = new Ray(GameManager.Instance.PlayerController.PlayerCamera.transform.position,
-            GameManager.Instance.PlayerController.PlayerCamera.transform.forward);
-
+        var playerCamera = GameManager.Instance.PlayerController.PlayerCamera;
+        if (playerCamera == null) return;
+        IInteractable detected = null;
         Paint detectedPaint = null;
-
-        if (Physics.Raycast(ray, out RaycastHit hit, interactionDistance))
+        if (Physics.Raycast(playerCamera.transform.position, playerCamera.transform.forward, out RaycastHit hit, interactionDistance))
         {
             detectedPaint = hit.collider.GetComponentInParent<Paint>();
-
-            
-            if (detectedPaint != null)
-            {
-                Debug.Log("Paint detected" + detectedPaint.name);//<-
-            }
+            if (detectedPaint != null) detected = detectedPaint;
+            else detected = hit.collider.GetComponentInParent<StatueInteractable>();
         }
-
-        if (detectedPaint == GameManager.Instance.Paint) return;
-
-        GameManager.Instance.Paint = detectedPaint;
-
-        if (GameManager.Instance.Paint != null)
-        {
-            UIManager.Instance.ShowInteractionPrompt(GameManager.Instance.Paint.transform, "E - Examine paint");
-            Debug.Log("Show message");//<-
-        }
-        else
-        {
-            UIManager.Instance.HideInteractionPrompt();
-        }
+        if (ReferenceEquals(detected, currentInteractable)) return;
+        currentInteractable = detected;
+        currentPaint = detectedPaint;
+        GameManager.Instance.Paint = currentPaint;
+        var prompt = detected as IInteractablePrompt;
+        MuseumRuntimeUI.SetFocus(prompt != null ? prompt.PromptMessage : null);
+        if (UIManager.Instance != null) UIManager.Instance.HideInteractionPrompt();
     }
     private void TryInteract(InputAction.CallbackContext context)
     {
-        if(GameManager.Instance.Paint != null)
-        {
-            GameManager.Instance.Paint.Interact();
-        }
+        currentInteractable?.Interact();
     }
 
     
 }
+

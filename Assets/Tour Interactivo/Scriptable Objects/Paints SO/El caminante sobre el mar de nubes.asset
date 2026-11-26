@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd21e31664f7f0b46ac53b643bbb1ab3, type: 3}
+  m_Name: El caminante sobre el mar de nubes
+  m_EditorClassIdentifier: Assembly-CSharp::PaintData
+  paintTitle: El caminante sobre el mar de nubes
+  author: "Caspar David Friedrich (1774\u20131840)"
+  description: "Un viajero contempla un paisaje monta\xF1oso cubierto de niebla.
+    La escena evoca la escala de la naturaleza y la reflexi\xF3n personal."
+  authorImage: {fileID: 0}
+  artworkImage: {fileID: 2800000, guid: ac080fab8debe3748a5efe93bb7b603d, type: 3}

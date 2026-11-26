@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd21e31664f7f0b46ac53b643bbb1ab3, type: 3}
+  m_Name: American Gothic
+  m_EditorClassIdentifier: Assembly-CSharp::PaintData
+  paintTitle: American Gothic
+  author: "Grant Wood (1891\u20131942)."
+  description: "Una pareja posa frente a una casa de estilo g\xF3tico rural. La precisi\xF3n
+    de los detalles hace de esta obra un icono del arte estadounidense."
+  authorImage: {fileID: 0}
+  artworkImage: {fileID: 2800000, guid: 721880c5dfc3cbc46849c471d38107e0, type: 3}

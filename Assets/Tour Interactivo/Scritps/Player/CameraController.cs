@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System;
 using UnityEngine.InputSystem;
 public class CameraController : MonoBehaviour
@@ -21,6 +21,7 @@ public class CameraController : MonoBehaviour
     }
     private void OnEnable()
     {
+        if (inputs == null) inputs = new InputSystem_Actions();
         inputs.Player.Enable();
     }
 
@@ -35,6 +36,7 @@ public class CameraController : MonoBehaviour
 
     private void MouseMotion()
     {
+        if (inputs == null) inputs = new InputSystem_Actions();
         InputAction look = inputs.Player.Look;
         Vector2 lookInput = look.ReadValue<Vector2>();
 
@@ -55,3 +57,4 @@ public class CameraController : MonoBehaviour
         
     }
 }
+

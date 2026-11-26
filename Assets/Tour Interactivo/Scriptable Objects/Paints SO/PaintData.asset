@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd21e31664f7f0b46ac53b643bbb1ab3, type: 3}
   m_Name: PaintData
   m_EditorClassIdentifier: Assembly-CSharp::PaintData
-  paintTitle: 'La Mona Lisa '
+  paintTitle: La Mona Lisa
   author: "Leonardo da Vinci (1452\u20131519)."
   description: "La Mona Lisa simboliza la uni\xF3n entre el ser humano y la naturaleza
     (el cuerpo como reflejo de la Tierra), priorizando la psicolog\xEDa y serenidad
     interior de la persona por encima del estatus social o la riqueza. "
   authorImage: {fileID: -5680962014526422608, guid: 3fccffc98231a154098c24df7d321ba1, type: 3}
+  artworkImage: {fileID: 2800000, guid: a4097fcfc7a798546bb58b4693ec64ae, type: 3}

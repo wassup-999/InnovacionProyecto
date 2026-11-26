@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd21e31664f7f0b46ac53b643bbb1ab3, type: 3}
+  m_Name: La ronda de Noche
+  m_EditorClassIdentifier: Assembly-CSharp::PaintData
+  paintTitle: La ronda de Noche
+  author: "Rembrandt van Rijn (1606\u20131669)"
+  description: "Retrato colectivo de la milicia c\xEDvica de \xC1msterdam. Rembrandt
+    transforma una escena de guardia en una composici\xF3n din\xE1mica de luces,
+    sombras y personajes."
+  authorImage: {fileID: 0}
+  artworkImage: {fileID: 2800000, guid: 158255209ef49424aa4a1c1c71ab4f98, type: 3}

@@ -571,6 +571,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &93022515 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 945232143833940942, guid: 4a998b823b442f14f9ea92b0f4a43f82, type: 3}
+  m_PrefabInstance: {fileID: 1310722556}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &93022519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93022515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: d59278330396ae3478450bc61182428f, type: 2}
 --- !u!1 &94497315 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4449870104139519549, guid: 6c0a91e0479c3414480467ee529c350a, type: 3}
@@ -713,6 +731,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6609488433698164833, guid: cc54ca03459fea24db41725f564a0966, type: 3}
   m_PrefabInstance: {fileID: 908205620}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &172849154 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8567575935521104450, guid: 8695d4187f9ee3b4592124bed8aecf21, type: 3}
+  m_PrefabInstance: {fileID: 1892213974}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &172849156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172849154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: 75ef2034052895e428a8def0382c2d20, type: 2}
 --- !u!1 &191108653
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +929,104 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &289521463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 289521465}
+  - component: {fileID: 289521464}
+  - component: {fileID: 289521468}
+  - component: {fileID: 289521467}
+  - component: {fileID: 289521466}
+  m_Layer: 0
+  m_Name: Museum Scene Enhancements
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &289521464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289521463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 196b2455c05baa54fa18bb1982c83e8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MuseumSceneEnhancements
+  dayToSunsetCycleSeconds: 360
+--- !u!4 &289521465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289521463}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &289521466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289521463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36773d4eba95ed14d86d1f346bb14518, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AudioManager
+  ambientLoop: {fileID: 0}
+  uiClick: {fileID: 0}
+  masterVolume: 0.75
+--- !u!114 &289521467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289521463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5232864a4c2fd4e4ab1550ca3a67ad69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MuseumRuntimeUI
+--- !u!114 &289521468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289521463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.UIElements.UIDocument
+  m_PanelSettings: {fileID: 11400000, guid: 4f31c0a760e37704685f9e4564423b50, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 0}
+  m_SortingOrder: 0
+  m_Position: 0
+  m_WorldSpaceSizeMode: 1
+  m_WorldSpaceWidth: 1920
+  m_WorldSpaceHeight: 1080
+  m_PivotReferenceSize: 0
+  m_Pivot: 0
+  m_WorldSpaceCollider: {fileID: 0}
 --- !u!1001 &289790713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1215,7 +1349,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8174792037951145632, guid: 031bbea3323a1fc48ad5896b353d4271, type: 3}
       propertyPath: m_Name
-      value: julioCesarin
+      value: Julio Cesar
       objectReference: {fileID: 0}
     - target: {fileID: 8807179017652624410, guid: 031bbea3323a1fc48ad5896b353d4271, type: 3}
       propertyPath: m_LocalScale.x
@@ -1272,7 +1406,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8174792037951145632, guid: 031bbea3323a1fc48ad5896b353d4271, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1815016338}
   m_SourcePrefab: {fileID: 100100000, guid: 031bbea3323a1fc48ad5896b353d4271, type: 3}
 --- !u!1001 &323573865
 PrefabInstance:
@@ -1336,12 +1473,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5516177005094374696, guid: 933aaa45784b7cf49829ffb2e3196275, type: 3}
       propertyPath: m_Name
-      value: Estatua de la libertad low
+      value: Estatua De La Libertad
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5516177005094374696, guid: 933aaa45784b7cf49829ffb2e3196275, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1372518335}
   m_SourcePrefab: {fileID: 100100000, guid: 933aaa45784b7cf49829ffb2e3196275, type: 3}
 --- !u!1 &326263297
 GameObject:
@@ -2165,6 +2305,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &469829653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5141696396310362739, guid: ff9dcc4587e5b4144bd32fdea088febc, type: 3}
+  m_PrefabInstance: {fileID: 1575536065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &469829657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469829653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: 2cbbc7e4eb646ee45988e119cd122727, type: 2}
 --- !u!4 &485008989 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6609488433698164833, guid: cc54ca03459fea24db41725f564a0966, type: 3}
@@ -2254,7 +2412,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4962724284087637301, guid: 453b1d584fe8fd245b0e4d3efd52009f, type: 3}
       propertyPath: m_Name
-      value: 063
+      value: Vasija de Nazca
       objectReference: {fileID: 0}
     - target: {fileID: 5734476359511560079, guid: 453b1d584fe8fd245b0e4d3efd52009f, type: 3}
       propertyPath: m_LocalScale.x
@@ -2311,8 +2469,42 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4962724284087637301, guid: 453b1d584fe8fd245b0e4d3efd52009f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1585877624}
   m_SourcePrefab: {fileID: 100100000, guid: 453b1d584fe8fd245b0e4d3efd52009f, type: 3}
+--- !u!134 &539582591
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
+--- !u!1 &540300598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1895019529823625356, guid: 3fdb834168f8a6444b3b3272fe0641c4, type: 3}
+  m_PrefabInstance: {fileID: 1554061361}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &540300600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540300598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: 59954c6dc59bfa24db641a2d3cda18c4, type: 2}
 --- !u!1 &557385224
 GameObject:
   m_ObjectHideFlags: 0
@@ -2850,6 +3042,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 7798f7726b1064b4e9798ab97f506ede, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1997283381}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: La ronda de Noche
@@ -3162,6 +3362,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772764190}
   m_CullTransparentMesh: 1
+--- !u!1 &776263424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5570700676069937721, guid: 2c84a6d501405a647980d480478e7395, type: 3}
+  m_PrefabInstance: {fileID: 1192293413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &776263428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776263424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: a8ae5eb8d5fa5ad4198e45fd4ad3b6e0, type: 2}
 --- !u!1001 &804683935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3239,6 +3457,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 74af89f690cb3954c8d73b63ebdbaaa4, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1280945711}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: El caminante sobre el mar de nubes
@@ -3308,6 +3534,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 2469e17eff3daf44e9b6331061044e44, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2135518577}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: El beso
@@ -3566,6 +3800,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 725279356207200680, guid: 61315acca1ed259488fc485f7ecce22d, type: 3}
   m_PrefabInstance: {fileID: 849534438}
   m_PrefabAsset: {fileID: 0}
+--- !u!134 &878312793
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
+--- !u!134 &879010867
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1001 &901640514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3574,6 +3834,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: ec76bd9e41dc68d4db197a24ebab810a, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2059117146}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: Las Meninas
@@ -3863,6 +4131,19 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc54ca03459fea24db41725f564a0966, type: 3}
+--- !u!134 &926753096
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1001 &941357006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4156,6 +4437,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: d2a192fb1fd44f84798951854207ed45, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 878312793}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: Mujer con Sombrilla
@@ -4235,6 +4524,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 61db24397f535cf40a772f43fea47bab, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 879010867}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: La noche estrellada
@@ -4371,12 +4668,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 737692390587108659, guid: b6f00a61e1045d54fb558919bd86517f, type: 3}
       propertyPath: m_Name
-      value: simon bolivar
+      value: "Estatua Ecuestre de Sim\xF3n Bol\xEDvar"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 737692390587108659, guid: b6f00a61e1045d54fb558919bd86517f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1869893338}
   m_SourcePrefab: {fileID: 100100000, guid: b6f00a61e1045d54fb558919bd86517f, type: 3}
 --- !u!4 &1040051382 stripped
 Transform:
@@ -4911,6 +5211,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!134 &1134227410
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1001 &1153263905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4919,6 +5232,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 154c2fb789093174788fae36c90f1663, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1318613038}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: La joven de la perla
@@ -4996,6 +5317,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 975a2d42e5afe8744ae4e5034542c65c, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2007999873}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: La Libertad guiando al pueblo
@@ -5065,6 +5394,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 539582591}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: MonaLisa
@@ -5188,12 +5521,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5570700676069937721, guid: 2c84a6d501405a647980d480478e7395, type: 3}
       propertyPath: m_Name
-      value: Marble_Carved_Highl_0224061841_texture
+      value: Estatua de Marduk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5570700676069937721, guid: 2c84a6d501405a647980d480478e7395, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 776263428}
   m_SourcePrefab: {fileID: 100100000, guid: 2c84a6d501405a647980d480478e7395, type: 3}
 --- !u!4 &1213250830 stripped
 Transform:
@@ -5208,6 +5544,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 0e3b6a51569442647972b6b040dfc83f, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 926753096}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: la creacion De Adam
@@ -5346,6 +5690,19 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc54ca03459fea24db41725f564a0966, type: 3}
+--- !u!134 &1280945711
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1 &1285296026
 GameObject:
   m_ObjectHideFlags: 0
@@ -5503,12 +5860,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 945232143833940942, guid: 4a998b823b442f14f9ea92b0f4a43f82, type: 3}
       propertyPath: m_Name
-      value: model
+      value: "Estatua de un esfinge Segovia, Espa\xF1a"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 945232143833940942, guid: 4a998b823b442f14f9ea92b0f4a43f82, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 93022519}
   m_SourcePrefab: {fileID: 100100000, guid: 4a998b823b442f14f9ea92b0f4a43f82, type: 3}
 --- !u!1 &1312881507
 GameObject:
@@ -5608,6 +5968,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: b2f37d4ef495bdf4a8a986e99b4c7425, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1900793072}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: 'American Gothic '
@@ -5806,6 +6174,32 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!134 &1314749720
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
+--- !u!134 &1318613038
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1 &1321748615
 GameObject:
   m_ObjectHideFlags: 0
@@ -5837,6 +6231,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!134 &1328645937
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
+--- !u!1 &1372518333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5516177005094374696, guid: 933aaa45784b7cf49829ffb2e3196275, type: 3}
+  m_PrefabInstance: {fileID: 323573865}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1372518335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372518333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: f9e48e918cd0083429c00ae955bbc6f0, type: 2}
 --- !u!1 &1393923945
 GameObject:
   m_ObjectHideFlags: 0
@@ -5982,6 +6407,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: f23b7df51a9474c4b94ea21a8aea563b, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2107929049}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: La escuela de Atenas
@@ -6055,6 +6488,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6950051703158654779, guid: 278d980b05400f84a96421484270bf74, type: 3}
   m_PrefabInstance: {fileID: 1402180827}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1402935028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7663237829266723665, guid: c6ee35b0f375a48459eae9f530c8d086, type: 3}
+  m_PrefabInstance: {fileID: 1664829144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1402935030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402935028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: 9a522676f75083b46aa7db7932300344, type: 2}
 --- !u!1001 &1410619443
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6254,6 +6705,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: c605262d3c60330478d2de2de95c3a42, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1328645937}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: El nacimiento de Venus
@@ -6331,6 +6790,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: fd2cf1240dc51b34299ad5bd1743e756, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1766436609}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: La maja Desnuda
@@ -6472,6 +6939,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 209b9fa4451b6fb40876b0cfb52ce381, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1134227410}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: 'El matrimonio Arnolfini '
@@ -6582,6 +7057,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1481064845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9086455046799939726, guid: cbabf7aed007fbd44b495a18f244aa8e, type: 3}
+  m_PrefabInstance: {fileID: 2032189413}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1481064849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481064845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: f515fbe4f8fcaae43819c6993682b1d3, type: 2}
 --- !u!1 &1497977869
 GameObject:
   m_ObjectHideFlags: 0
@@ -7049,12 +7542,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895019529823625356, guid: 3fdb834168f8a6444b3b3272fe0641c4, type: 3}
       propertyPath: m_Name
-      value: prueba 3d pedro heredia_simplified_3d_mesh 1
+      value: Estatua de Pedro Heredia
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1895019529823625356, guid: 3fdb834168f8a6444b3b3272fe0641c4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 540300600}
   m_SourcePrefab: {fileID: 100100000, guid: 3fdb834168f8a6444b3b3272fe0641c4, type: 3}
 --- !u!1001 &1575536065
 PrefabInstance:
@@ -7066,7 +7562,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5141696396310362739, guid: ff9dcc4587e5b4144bd32fdea088febc, type: 3}
       propertyPath: m_Name
-      value: cabeza 12
+      value: Cabeza Clava
       objectReference: {fileID: 0}
     - target: {fileID: 5481207361430118601, guid: ff9dcc4587e5b4144bd32fdea088febc, type: 3}
       propertyPath: m_LocalScale.x
@@ -7123,8 +7619,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5141696396310362739, guid: ff9dcc4587e5b4144bd32fdea088febc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 469829657}
   m_SourcePrefab: {fileID: 100100000, guid: ff9dcc4587e5b4144bd32fdea088febc, type: 3}
+--- !u!1 &1585877622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4962724284087637301, guid: 453b1d584fe8fd245b0e4d3efd52009f, type: 3}
+  m_PrefabInstance: {fileID: 514585113}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1585877624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585877622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: ef4129476d778f34aa946512939b76f5, type: 2}
 --- !u!1001 &1610028059
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7638,6 +8155,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631946415}
   m_CullTransparentMesh: 1
+--- !u!1 &1632493818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 429604248691297428, guid: 6d7a70e14f4f2884598391812fc010b4, type: 3}
+  m_PrefabInstance: {fileID: 2090369268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1632493820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632493818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: 7d14e3322bdfda94b9443db352b24e23, type: 2}
 --- !u!1001 &1645854331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7715,6 +8250,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: c11bd7cf73832624385b679f3326f05d, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1847397271}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: la ultima Cena
@@ -7846,12 +8389,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7663237829266723665, guid: c6ee35b0f375a48459eae9f530c8d086, type: 3}
       propertyPath: m_Name
-      value: 97733_97768 LP
+      value: Statua di fanciulla togata
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7663237829266723665, guid: c6ee35b0f375a48459eae9f530c8d086, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1402935030}
   m_SourcePrefab: {fileID: 100100000, guid: c6ee35b0f375a48459eae9f530c8d086, type: 3}
 --- !u!1001 &1667990576
 PrefabInstance:
@@ -7922,6 +8468,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 9809a0f148f3f894a909a744e51d84c2, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1679046776}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: El grito
@@ -8057,6 +8611,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 725279356207200680, guid: 61315acca1ed259488fc485f7ecce22d, type: 3}
   m_PrefabInstance: {fileID: 1676496443}
   m_PrefabAsset: {fileID: 0}
+--- !u!134 &1679046776
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1001 &1685481581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8197,6 +8764,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6609488433698164833, guid: cc54ca03459fea24db41725f564a0966, type: 3}
   m_PrefabInstance: {fileID: 680051097}
   m_PrefabAsset: {fileID: 0}
+--- !u!134 &1766436609
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1 &1772941897
 GameObject:
   m_ObjectHideFlags: 0
@@ -8250,6 +8830,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!134 &1779302235
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1001 &1788046196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8311,6 +8904,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fbc77f3889a6f848af3d9ec740ec2e9, type: 3}
+--- !u!1 &1815016336 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8174792037951145632, guid: 031bbea3323a1fc48ad5896b353d4271, type: 3}
+  m_PrefabInstance: {fileID: 321132256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1815016338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815016336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: f6ad1a61a5fd570459bdeba0824e4d31, type: 2}
+--- !u!134 &1817351386
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1001 &1824398914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8390,6 +9014,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2f5324af6946274449c69283cd581a06, type: 3}
   m_PrefabInstance: {fileID: 653376057}
   m_PrefabAsset: {fileID: 0}
+--- !u!134 &1847397271
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1001 &1852765977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8398,6 +9035,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 55ed1ee1782f7134fa881f1d49776480, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1314749720}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: "Noct\xE1mbulos"
@@ -8630,6 +9275,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 725279356207200680, guid: 61315acca1ed259488fc485f7ecce22d, type: 3}
   m_PrefabInstance: {fileID: 1869394910}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1869893334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 737692390587108659, guid: b6f00a61e1045d54fb558919bd86517f, type: 3}
+  m_PrefabInstance: {fileID: 1034398017}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1869893338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1869893334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1eeedb7eb65a641a79c2d5ba1bd03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatueInteractable
+  data: {fileID: 11400000, guid: 42fbfb0bcf519704a8f2a97e064340fa, type: 2}
 --- !u!1001 &1892213974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8640,7 +9303,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8567575935521104450, guid: 8695d4187f9ee3b4592124bed8aecf21, type: 3}
       propertyPath: m_Name
-      value: portada
+      value: Portada del sol Tiahuanaco
       objectReference: {fileID: 0}
     - target: {fileID: 9056163011564927224, guid: 8695d4187f9ee3b4592124bed8aecf21, type: 3}
       propertyPath: m_LocalScale.x
@@ -8697,8 +9360,24 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8567575935521104450, guid: 8695d4187f9ee3b4592124bed8aecf21, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 172849156}
   m_SourcePrefab: {fileID: 100100000, guid: 8695d4187f9ee3b4592124bed8aecf21, type: 3}
+--- !u!134 &1900793072
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1001 &1915582548
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8845,6 +9524,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 9b020e99498e0f5479f554f3b2a70926, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1779302235}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: Guernica
@@ -8922,6 +9609,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5099745539706586579, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: paintData
+      value: 
+      objectReference: {fileID: 11400000, guid: 186bd1fc4c66895469a677af7babc077, type: 2}
+    - target: {fileID: 275343432010393595, guid: 278d980b05400f84a96421484270bf74, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 1817351386}
     - target: {fileID: 5376338117437844092, guid: 278d980b05400f84a96421484270bf74, type: 3}
       propertyPath: m_Name
       value: 'La gran ola de Kanagawa '
@@ -9130,6 +9825,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 725279356207200680, guid: 61315acca1ed259488fc485f7ecce22d, type: 3}
   m_PrefabInstance: {fileID: 1995054487}
   m_PrefabAsset: {fileID: 0}
+--- !u!134 &1997283381
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1 &1999070932
 GameObject:
   m_ObjectHideFlags: 0
@@ -9142,7 +9850,7 @@ GameObject:
   - component: {fileID: 1999070934}
   - component: {fileID: 1999070933}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: EsferaConSky
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9337,6 +10045,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!134 &2007999873
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1001 &2032189413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9399,13 +10120,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9086455046799939726, guid: cbabf7aed007fbd44b495a18f244aa8e, type: 3}
       propertyPath: m_Name
-      value: Buddha 3D
+      value: Buddha
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9086455046799939726, guid: cbabf7aed007fbd44b495a18f244aa8e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1481064849}
   m_SourcePrefab: {fileID: 100100000, guid: cbabf7aed007fbd44b495a18f244aa8e, type: 3}
+--- !u!134 &2059117146
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1001 &2078177120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9490,7 +10227,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 429604248691297428, guid: 6d7a70e14f4f2884598391812fc010b4, type: 3}
       propertyPath: m_Name
-      value: 6
+      value: "Cer\xE1mica de la cultura Mochica - Chimu"
       objectReference: {fileID: 0}
     - target: {fileID: 1062166050282280494, guid: 6d7a70e14f4f2884598391812fc010b4, type: 3}
       propertyPath: m_LocalScale.x
@@ -9547,7 +10284,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 429604248691297428, guid: 6d7a70e14f4f2884598391812fc010b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1632493820}
   m_SourcePrefab: {fileID: 100100000, guid: 6d7a70e14f4f2884598391812fc010b4, type: 3}
 --- !u!1001 &2097249541
 PrefabInstance:
@@ -9623,6 +10363,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 725279356207200680, guid: 61315acca1ed259488fc485f7ecce22d, type: 3}
   m_PrefabInstance: {fileID: 2097249541}
   m_PrefabAsset: {fileID: 0}
+--- !u!134 &2107929049
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1 &2108201982
 GameObject:
   m_ObjectHideFlags: 0
@@ -9766,6 +10519,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!134 &2135518577
+PhysicsMaterial:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 2
+  m_DynamicFriction: 0.6
+  m_StaticFriction: 0.6
+  m_Bounciness: 0
+  m_FrictionCombine: 0
+  m_BounceCombine: 0
 --- !u!1001 &2139706832
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10154,3 +10920,4 @@ SceneRoots:
   - {fileID: 14955733}
   - {fileID: 1664829144}
   - {fileID: 1892213974}
+  - {fileID: 289521465}

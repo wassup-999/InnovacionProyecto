@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52f7ade169d0fe46b71ad4beb77ccaa, type: 3}
+  m_Name: Cabeza Clava 1
+  m_EditorClassIdentifier: Assembly-CSharp::StatueData
+  statueName: Cabeza Clava
+  cultureAndOrigin: "Cultura Chav\xEDn \xB7 Per\xFA"
+  period: "c. 1200\u2013400 a. C."
+  description: "Cabeza p\xE9trea con rasgos humanos y felinos, vinculada a los relieves
+    y esculturas del centro ceremonial de Chav\xEDn de Hu\xE1ntar."
+  image: {fileID: 2800000, guid: 0e0cc35526b9f824588fa2e28eef9292, type: 3}

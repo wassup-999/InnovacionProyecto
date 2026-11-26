@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52f7ade169d0fe46b71ad4beb77ccaa, type: 3}
+  m_Name: Julio Cesar 1
+  m_EditorClassIdentifier: Assembly-CSharp::StatueData
+  statueName: Julio Cesar
+  cultureAndOrigin: "Roma \xB7 Rep\xFAblica romana"
+  period: "100\u201344 a. C."
+  description: "Retrato escult\xF3rico de Julio C\xE9sar, general y dirigente romano
+    cuya carrera transform\xF3 el final de la Rep\xFAblica romana."
+  image: {fileID: 2800000, guid: 13cc67255a8157041b414a310b79e67d, type: 3}

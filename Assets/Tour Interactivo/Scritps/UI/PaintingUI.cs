@@ -24,6 +24,11 @@ public class PaintingUI : MonoBehaviour
     }
     public void ShowPaintInfo(PaintData paintInfo)
     {
+        if (MuseumRuntimeUI.Instance != null)
+        {
+            MuseumRuntimeUI.ShowPainting(paintInfo);
+            return;
+        }
         if (panel != null && 
             titleTxt != null &&
             authorTxt != null &&
@@ -48,6 +53,7 @@ public class PaintingUI : MonoBehaviour
 
     public void HidePaintInfo()
     {
+        MuseumRuntimeUI.HideInfo();
         if(panel != null)
         {
             panel.SetActive(false);

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52f7ade169d0fe46b71ad4beb77ccaa, type: 3}
+  m_Name: Estatua de Marduk 1
+  m_EditorClassIdentifier: Assembly-CSharp::StatueData
+  statueName: Estatua de Marduk
+  cultureAndOrigin: "Babilonia \xB7 Mesopotamia"
+  period: "Antig\xFCedad"
+  description: "Marduk fue una deidad principal de la antigua Babilonia. Esta pieza
+    representa al dios dentro de la tradici\xF3n art\xEDstica mesopot\xE1mica."
+  image: {fileID: 2800000, guid: d0c44ebecdf0a7542a7fe8bd716d486b, type: 3}

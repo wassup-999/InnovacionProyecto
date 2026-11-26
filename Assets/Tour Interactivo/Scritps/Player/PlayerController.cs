@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
@@ -33,11 +33,16 @@ public class PlayerController : MonoBehaviour
 
     private void Awake()
     {
-        characterController = GetComponent<CharacterController>();      
-        inputs = new();
+        characterController = GetComponent<CharacterController>();
+        EnsureInputs();
+    }
+    private void EnsureInputs()
+    {
+        if (inputs == null) inputs = new InputSystem_Actions();
     }
     private void OnEnable()
     {
+        EnsureInputs();
         inputs.Player.Enable();
     }
     private void OnDisable()
@@ -55,6 +60,7 @@ public class PlayerController : MonoBehaviour
     }
     private void ReadInput()
     {
+        EnsureInputs();
         moveInput = canMove ? inputs.Player.Move.ReadValue<Vector2>() : Vector2.zero;
         moveInput = Vector2.ClampMagnitude(moveInput, 1f);
     }
@@ -99,3 +105,4 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawLine(PlayerCamera.transform.position, PlayerCamera.transform.position + PlayerCamera.transform.forward * 3f);
     }
 }
+
