@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac14465f81b7efc4582b00ac50f89ae7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartMenuController
-  nextSceneName: Npc
+  nextSceneName: InteractiveTourTrip
   fadeDuration: 0.45
 --- !u!114 &1000314020
 MonoBehaviour:

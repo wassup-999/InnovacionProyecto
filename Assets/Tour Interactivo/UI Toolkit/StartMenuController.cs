@@ -14,7 +14,7 @@ public class StartMenuController : MonoBehaviour
 {
     [Header("Configuración")]
     [Tooltip("Nombre exacto de la escena que se carga al comenzar (debe estar en Build Settings).")]
-    [SerializeField] private string nextSceneName = "Npc";
+    [SerializeField] private string nextSceneName = "InteractiveTourTrip";
 
     [Tooltip("Duración del fundido a negro antes de cargar la escena.")]
     [SerializeField] private float fadeDuration = 0.45f;
