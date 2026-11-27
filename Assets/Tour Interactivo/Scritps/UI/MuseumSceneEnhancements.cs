@@ -49,7 +49,9 @@ public sealed class MuseumSceneEnhancements : MonoBehaviour
         TotalStatueCount = FindObjectsByType<StatueInteractable>(FindObjectsSortMode.None).Length;
         ColorVisitors();
         SetupArtwork();
-        SetupStatues();
+
+       // SetupStatues();
+
         SetupCeramicAccents();
         SetupPostProcessing();
         var lights = FindObjectsByType<Light>(FindObjectsSortMode.None);
@@ -183,17 +185,19 @@ public sealed class MuseumSceneEnhancements : MonoBehaviour
         }
     }
 
+    //This is a temporary solution to make the statues look better in the museum scene. Ideally, the statues should be modeled with proper pedestals and colliders.
     private void SetupStatues()
     {
         const float galleryFloor = 12.9f;
         foreach (var statue in FindObjectsByType<StatueInteractable>(FindObjectsSortMode.None))
         {
+            
             var renderers = statue.GetComponentsInChildren<Renderer>(true);
             if (renderers.Length == 0) continue;
             Bounds bounds = renderers[0].bounds;
             for (int i = 1; i < renderers.Length; i++) bounds.Encapsulate(renderers[i].bounds);
             statue.transform.position += Vector3.up * (galleryFloor - bounds.min.y);
-
+            
             if (statue.GetComponentInChildren<Collider>() == null)
             {
                 var collider = statue.gameObject.AddComponent<BoxCollider>();
@@ -202,7 +206,7 @@ public sealed class MuseumSceneEnhancements : MonoBehaviour
                 collider.center = localCenter;
                 collider.size = new Vector3(Mathf.Max(.25f, Mathf.Abs(localSize.x)), Mathf.Max(.35f, Mathf.Abs(localSize.y)), Mathf.Max(.25f, Mathf.Abs(localSize.z)));
             }
-
+            
             string pedestalName = statue.name + " · Pedestal";
             if (GameObject.Find(pedestalName) != null) continue;
             float diameter = Mathf.Clamp(Mathf.Max(bounds.size.x, bounds.size.z) * .55f, .7f, 1.6f);
@@ -210,6 +214,7 @@ public sealed class MuseumSceneEnhancements : MonoBehaviour
             pedestal.name = pedestalName;
             pedestal.transform.position = new Vector3(bounds.center.x, galleryFloor + .14f, bounds.center.z);
             pedestal.transform.localScale = new Vector3(diameter, .14f, diameter);
+            
             var pedestalCollider = pedestal.GetComponent<Collider>();
             if (pedestalCollider != null) Destroy(pedestalCollider);
             var pedestalRenderer = pedestal.GetComponent<Renderer>();
